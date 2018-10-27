@@ -41,6 +41,7 @@ int main(int argc, char *argv[]){
 
     char message[]="Hello world!";
 
+					//这个argc!=2,表示如果输入的参数不是两个的话(其实是输入一个参数，第一个参数操作系统提供)
     if(argc!=2){
     	printf("Usage : %s<port>\n",argv[0]);
     	/*exit用于在程序运行的过程中随时结束程序，函数原型void exit(int status)，
