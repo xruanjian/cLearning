@@ -65,7 +65,7 @@ int main(int argc,char* argv[]){
 	}
 
 	sock=socket(PF_INET,SOCK_STREAM,0);
-	if(sock == -1){
+	if(sock == -1)
 		error_handling("socket()  error");
 
 	//memset：作用是在一段内存块中填充某个给定的值，
