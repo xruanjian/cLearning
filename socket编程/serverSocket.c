@@ -103,19 +103,4 @@ void  error_handling(char *message){
 	fputc('\n',stderr);
 	exit(1);
 }
-[1]));
-	//使用了强制类型转换
-    if(bind(serv_sock,(struct sockaddr*)&serv_addr, sizeof(serv_addr))==-1)
-    	error_handling("bind() error");
-
-    if(listen(serv_sock,5)==-1)
-    	error_handling("listen()  error");
-    	clnt_addr_size=sizeof(clnt_addr);
-    	
-    clnt_sock=accept(serv_sock, (struct sockaddr*)&clnt_addr, &clnt_addr_size);
-
-    	if(clnt_sock==-1)
-    		error_handling("accept()  error");
-    	write(clnt_sock, message, sizeof(message));
-    	close(clnt_sock);
-    	close(serv_sock);
+	
